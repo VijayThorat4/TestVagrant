@@ -5,8 +5,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import com.NDTV.Pages.HomePage;
+import com.NDTV.Pages.WeatherClass;
 
 public class Temperature_GUI {
+	static String temerature;
 	
 	@Test
 	public void Fetch_GUI_Temp() {
@@ -15,10 +17,29 @@ public class Temperature_GUI {
 		driver.get("https://www.ndtv.com/");
 		driver.manage().window().maximize();
 		
+		// Actions on Home Page
 		HomePage home = new HomePage(driver);
-		home.dismissInitialPopup();
-		home.expandMenu();
-		home.selectWeather();
+		
+		// Initial popup depends on browser setting, so using try catch block
+		try {			
+			home.expandMenu();
+			home.selectWeather();
+		}
+		catch(Exception e) {
+			home.dismissInitialPopup();
+			home.expandMenu();
+			home.selectWeather();		
+		}
+
+		
+		// Actions on Weather Page
+		WeatherClass weather = new WeatherClass(driver);
+		weather.enterCityName();
+		weather.selectCityFromList();
+		weather.clickCityOnMap();
+		temerature = weather.fetchTempValue();
+		System.out.println(temerature);
+		
 	}
 
 }
