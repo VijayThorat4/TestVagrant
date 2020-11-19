@@ -3,9 +3,18 @@ package com.NDTV.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import Utilities.PropertiesFile;
+
 public class WeatherClass {
 	WebDriver driver;
-	String city = "Pune";
+	public static String city = "Pune";
+	
+	// Constructor to initialize WebDriver and read city name from properties file
+	public WeatherClass(WebDriver driver) {
+		this.driver = driver;
+		PropertiesFile.readPropertiesFile();
+	}
+
 	
 	// Locators
 	By searchBox = By.id("searchBox");
@@ -13,10 +22,7 @@ public class WeatherClass {
 	By cityOnMap = By.xpath("//div[text()=" + "'" + city + "'" + "]");
 	By tempLocator = By.xpath("//div[@class=\"leaflet-popup-content\"]/div/span[4]");
 	
-	// Constructor to initialize WebDriver
-	public WeatherClass(WebDriver driver) {
-		this.driver = driver;
-	}
+
 	
 	// Actions to be performed
 	public void enterCityName() {

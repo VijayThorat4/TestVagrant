@@ -1,5 +1,7 @@
 package Tests;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -16,6 +18,7 @@ public class Temperature_GUI {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.ndtv.com/");
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 		// Actions on Home Page
 		HomePage home = new HomePage(driver);
