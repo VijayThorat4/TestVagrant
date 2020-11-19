@@ -5,11 +5,12 @@ import org.openqa.selenium.WebDriver;
 
 public class WeatherClass {
 	WebDriver driver;
+	String city = "Pune";
 	
 	// Locators
 	By searchBox = By.id("searchBox");
-	By cityCheckboxSelector = By.id("Pune");
-	By cityOnMap = By.xpath("//div[text()=\"Pune\"]");
+	By cityCheckboxSelector = By.id(city);
+	By cityOnMap = By.xpath("//div[text()=" + "'" + city + "'" + "]");
 	By tempLocator = By.xpath("//div[@class=\"leaflet-popup-content\"]/div/span[4]");
 	
 	// Constructor to initialize WebDriver
@@ -19,7 +20,7 @@ public class WeatherClass {
 	
 	// Actions to be performed
 	public void enterCityName() {
-		driver.findElement(searchBox).sendKeys("Pune");
+		driver.findElement(searchBox).sendKeys(city);
 	}
 	
 	public void selectCityFromList() {

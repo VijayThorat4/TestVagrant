@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29033" started-at="2020-11-19T18:06:54 IST" finished-at="2020-11-19T18:07:24 IST">
+  <suite name="Default suite" duration-ms="38712" started-at="2020-11-19T18:46:03 IST" finished-at="2020-11-19T18:46:42 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29033" started-at="2020-11-19T18:06:54 IST" finished-at="2020-11-19T18:07:24 IST">
+    <test name="Default test" duration-ms="38712" started-at="2020-11-19T18:46:03 IST" finished-at="2020-11-19T18:46:42 IST">
       <class name="Tests.Temperature_GUI">
-        <test-method status="PASS" signature="Fetch_GUI_Temp()[pri:0, instance:Tests.Temperature_GUI@50b494a6]" name="Fetch_GUI_Temp" duration-ms="28993" started-at="2020-11-19T18:06:55 IST" finished-at="2020-11-19T18:07:24 IST">
+        <test-method status="PASS" signature="Fetch_GUI_Temp()[pri:0, instance:Tests.Temperature_GUI@50b494a6]" name="Fetch_GUI_Temp" duration-ms="38664" started-at="2020-11-19T18:46:03 IST" finished-at="2020-11-19T18:46:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fetch_GUI_Temp -->
