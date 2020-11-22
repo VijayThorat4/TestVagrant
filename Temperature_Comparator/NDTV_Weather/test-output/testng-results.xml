@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Temerature Comparator" duration-ms="34407" started-at="2020-11-22T19:00:42 IST" finished-at="2020-11-22T19:01:16 IST">
+  <suite name="Temerature Comparator" duration-ms="39730" started-at="2020-11-22T19:17:50 IST" finished-at="2020-11-22T19:18:30 IST">
     <groups>
     </groups>
-    <test name="Fetch values from GUI and API" duration-ms="34372" started-at="2020-11-22T19:00:42 IST" finished-at="2020-11-22T19:01:16 IST">
+    <test name="Fetch values from GUI and API" duration-ms="39654" started-at="2020-11-22T19:17:50 IST" finished-at="2020-11-22T19:18:30 IST">
       <class name="Tests.Temperature_API">
-        <test-method status="PASS" signature="getRequest()[pri:0, instance:Tests.Temperature_API@1d29cf23]" name="getRequest" duration-ms="3982" started-at="2020-11-22T19:00:42 IST" finished-at="2020-11-22T19:00:46 IST">
+        <test-method status="PASS" signature="getRequest()[pri:0, instance:Tests.Temperature_API@1d29cf23]" name="getRequest" duration-ms="4130" started-at="2020-11-22T19:17:50 IST" finished-at="2020-11-22T19:17:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getRequest -->
       </class> <!-- Tests.Temperature_API -->
       <class name="Tests.Temperature_GUI">
-        <test-method status="PASS" signature="setup()[pri:0, instance:Tests.Temperature_GUI@27a5f880]" name="setup" is-config="true" duration-ms="30308" started-at="2020-11-22T19:00:42 IST" finished-at="2020-11-22T19:01:12 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Tests.Temperature_GUI@27a5f880]" name="setup" is-config="true" duration-ms="33007" started-at="2020-11-22T19:17:50 IST" finished-at="2020-11-22T19:18:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Fetch_GUI_Temp()[pri:0, instance:Tests.Temperature_GUI@27a5f880]" name="Fetch_GUI_Temp" duration-ms="3264" started-at="2020-11-22T19:01:12 IST" finished-at="2020-11-22T19:01:16 IST">
+        <test-method status="PASS" signature="Fetch_GUI_Temp()[pri:0, instance:Tests.Temperature_GUI@27a5f880]" name="Fetch_GUI_Temp" duration-ms="5735" started-at="2020-11-22T19:18:23 IST" finished-at="2020-11-22T19:18:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fetch_GUI_Temp -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:Tests.Temperature_GUI@27a5f880]" name="teardown" is-config="true" duration-ms="752" started-at="2020-11-22T19:01:16 IST" finished-at="2020-11-22T19:01:16 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Tests.Temperature_GUI@27a5f880]" name="teardown" is-config="true" duration-ms="868" started-at="2020-11-22T19:18:29 IST" finished-at="2020-11-22T19:18:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Tests.Temperature_GUI -->
     </test> <!-- Fetch values from GUI and API -->
-    <test name="Compare the values" duration-ms="6" started-at="2020-11-22T19:01:16 IST" finished-at="2020-11-22T19:01:16 IST">
+    <test name="Compare the values" duration-ms="25" started-at="2020-11-22T19:18:30 IST" finished-at="2020-11-22T19:18:30 IST">
       <class name="Tests.Temperature_Compare">
-        <test-method status="FAIL" signature="compare_Values()[pri:0, instance:Tests.Temperature_Compare@30a3107a]" name="compare_Values" duration-ms="2" started-at="2020-11-22T19:01:16 IST" finished-at="2020-11-22T19:01:16 IST">
+        <test-method status="FAIL" signature="compare_Values()[pri:0, instance:Tests.Temperature_Compare@30a3107a]" name="compare_Values" duration-ms="16" started-at="2020-11-22T19:18:30 IST" finished-at="2020-11-22T19:18:30 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[did not expect to find [true] but found [false]]]>
