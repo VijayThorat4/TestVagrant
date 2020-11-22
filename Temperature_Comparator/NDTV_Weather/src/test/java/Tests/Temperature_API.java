@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
 
 public class Temperature_API {
 	static String temp_api;

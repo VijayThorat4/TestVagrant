@@ -20,7 +20,7 @@ public class Temperature_Compare {
 		GUI_Temp = GUI_Temp + 273.15;   //Converting from celsius to kelvin
 		
 		if (Math.abs(GUI_Temp - API_Temp) < 2) {
-			System.out.println("Temerature Variation is within limit");
+			System.out.println("Temerature variation is within limit");
 			Assert.assertTrue(true);
 		}else {
 			System.out.println("Temperature variation is more than the expected limit");

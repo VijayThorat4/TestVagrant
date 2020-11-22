@@ -41,7 +41,7 @@ public class Temperature_GUI {
 		weather.selectCityFromList();
 		weather.clickCityOnMap();
 		temp_GUI = weather.fetchTempValue();
-		System.out.println("Temperature from NDTV Weature is " + temp_GUI + " Celsius");
+		System.out.println("Temperature from NDTV Weature is " + temp_GUI + "Celsius");
 		
 	}
 

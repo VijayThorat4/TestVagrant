@@ -1,11 +1,8 @@
 package Utilities;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Properties;
-
-import org.testng.annotations.Test;
 
 import com.NDTV.Pages.WeatherClass;
 

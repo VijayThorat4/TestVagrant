@@ -2,26 +2,26 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Temerature Comparator" duration-ms="34337" started-at="2020-11-22T11:02:02 IST" finished-at="2020-11-22T11:02:36 IST">
+  <suite name="Temerature Comparator" duration-ms="35015" started-at="2020-11-22T11:18:50 IST" finished-at="2020-11-22T11:19:25 IST">
     <groups>
     </groups>
-    <test name="Fetch values from GUI and API" duration-ms="34279" started-at="2020-11-22T11:02:02 IST" finished-at="2020-11-22T11:02:36 IST">
+    <test name="Fetch values from GUI and API" duration-ms="34985" started-at="2020-11-22T11:18:50 IST" finished-at="2020-11-22T11:19:25 IST">
       <class name="Tests.Temperature_GUI">
-        <test-method status="PASS" signature="Fetch_GUI_Temp()[pri:0, instance:Tests.Temperature_GUI@23faf8f2]" name="Fetch_GUI_Temp" duration-ms="29760" started-at="2020-11-22T11:02:02 IST" finished-at="2020-11-22T11:02:32 IST">
+        <test-method status="PASS" signature="Fetch_GUI_Temp()[pri:0, instance:Tests.Temperature_GUI@23faf8f2]" name="Fetch_GUI_Temp" duration-ms="34937" started-at="2020-11-22T11:18:51 IST" finished-at="2020-11-22T11:19:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fetch_GUI_Temp -->
       </class> <!-- Tests.Temperature_GUI -->
       <class name="Tests.Temperature_API">
-        <test-method status="PASS" signature="getRequest()[pri:0, instance:Tests.Temperature_API@2d6eabae]" name="getRequest" duration-ms="4466" started-at="2020-11-22T11:02:32 IST" finished-at="2020-11-22T11:02:36 IST">
+        <test-method status="PASS" signature="getRequest()[pri:0, instance:Tests.Temperature_API@2d6eabae]" name="getRequest" duration-ms="4410" started-at="2020-11-22T11:18:51 IST" finished-at="2020-11-22T11:18:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getRequest -->
       </class> <!-- Tests.Temperature_API -->
     </test> <!-- Fetch values from GUI and API -->
-    <test name="Compare the values" duration-ms="4" started-at="2020-11-22T11:02:36 IST" finished-at="2020-11-22T11:02:36 IST">
+    <test name="Compare the values" duration-ms="6" started-at="2020-11-22T11:19:25 IST" finished-at="2020-11-22T11:19:25 IST">
       <class name="Tests.Temperature_Compare">
-        <test-method status="PASS" signature="compare_Values()[pri:0, instance:Tests.Temperature_Compare@57e1b0c]" name="compare_Values" duration-ms="1" started-at="2020-11-22T11:02:36 IST" finished-at="2020-11-22T11:02:36 IST">
+        <test-method status="PASS" signature="compare_Values()[pri:0, instance:Tests.Temperature_Compare@57e1b0c]" name="compare_Values" duration-ms="1" started-at="2020-11-22T11:19:25 IST" finished-at="2020-11-22T11:19:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compare_Values -->
