@@ -10,7 +10,7 @@ import com.NDTV.Pages.HomePage;
 import com.NDTV.Pages.WeatherClass;
 
 public class Temperature_GUI {
-	static String temerature;
+	static String temp_GUI;
 	
 	@Test
 	public void Fetch_GUI_Temp() {
@@ -40,8 +40,8 @@ public class Temperature_GUI {
 		weather.enterCityName();
 		weather.selectCityFromList();
 		weather.clickCityOnMap();
-		temerature = weather.fetchTempValue();
-		System.out.println(temerature);
+		temp_GUI = weather.fetchTempValue();
+		System.out.println(temp_GUI);
 		
 	}
 

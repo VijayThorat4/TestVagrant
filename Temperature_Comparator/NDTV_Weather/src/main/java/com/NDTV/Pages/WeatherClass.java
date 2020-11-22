@@ -38,8 +38,8 @@ public class WeatherClass {
 	}
 	
 	public String fetchTempValue() {
-		String data = driver.findElement(tempLocator).getText();
-		String dataSplitted[] = data.split(" ");
+		String data = driver.findElement(tempLocator).getText();    // capturing complete text
+		String dataSplitted[] = data.split(" ");     // extracting temperature value
 		return dataSplitted[3];
 	}
 }

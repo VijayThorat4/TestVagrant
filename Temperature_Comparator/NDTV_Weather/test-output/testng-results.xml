@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27412" started-at="2020-11-19T19:49:07 IST" finished-at="2020-11-19T19:49:34 IST">
+  <suite name="Default suite" duration-ms="3452" started-at="2020-11-22T10:17:42 IST" finished-at="2020-11-22T10:17:45 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27412" started-at="2020-11-19T19:49:07 IST" finished-at="2020-11-19T19:49:34 IST">
-      <class name="Tests.Temperature_GUI">
-        <test-method status="PASS" signature="Fetch_GUI_Temp()[pri:0, instance:Tests.Temperature_GUI@4f970963]" name="Fetch_GUI_Temp" duration-ms="27369" started-at="2020-11-19T19:49:07 IST" finished-at="2020-11-19T19:49:34 IST">
+    <test name="Default test" duration-ms="3452" started-at="2020-11-22T10:17:42 IST" finished-at="2020-11-22T10:17:45 IST">
+      <class name="Tests.Temperature_API">
+        <test-method status="PASS" signature="getRequest()[pri:0, instance:Tests.Temperature_API@131276c2]" name="getRequest" duration-ms="3410" started-at="2020-11-22T10:17:42 IST" finished-at="2020-11-22T10:17:45 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Fetch_GUI_Temp -->
-      </class> <!-- Tests.Temperature_GUI -->
+        </test-method> <!-- getRequest -->
+      </class> <!-- Tests.Temperature_API -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
