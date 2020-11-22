@@ -27,7 +27,7 @@ public class Temperature_API {
 		
 //		Extracting temperature from response
 		temp_api = response.jsonPath().getString("main.temp");
-		System.out.println(temp_api);
+		System.out.println("Temperature provided from API is " + temp_api + " Kelvin");
 	}
 
 }

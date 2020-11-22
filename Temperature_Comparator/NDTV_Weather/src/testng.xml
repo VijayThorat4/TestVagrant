@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Temerature Comparator">
+  <test name="Fetch values from GUI and API">
+      <classes>
+      <class name="Tests.Temperature_GUI"/>
+      <class name="Tests.Temperature_API"/>
+      </classes>
+  </test>
+  <test name = "Compare the values">
+  		<classes>
+  		<class name = "Tests.Temperature_Compare"/>
+  		</classes>
+  </test>
+</suite>

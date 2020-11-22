@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63" started-at="2020-11-22T10:43:52 IST" finished-at="2020-11-22T10:43:52 IST">
+  <suite name="Temerature Comparator" duration-ms="34337" started-at="2020-11-22T11:02:02 IST" finished-at="2020-11-22T11:02:36 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="63" started-at="2020-11-22T10:43:52 IST" finished-at="2020-11-22T10:43:52 IST">
+    <test name="Fetch values from GUI and API" duration-ms="34279" started-at="2020-11-22T11:02:02 IST" finished-at="2020-11-22T11:02:36 IST">
+      <class name="Tests.Temperature_GUI">
+        <test-method status="PASS" signature="Fetch_GUI_Temp()[pri:0, instance:Tests.Temperature_GUI@23faf8f2]" name="Fetch_GUI_Temp" duration-ms="29760" started-at="2020-11-22T11:02:02 IST" finished-at="2020-11-22T11:02:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fetch_GUI_Temp -->
+      </class> <!-- Tests.Temperature_GUI -->
+      <class name="Tests.Temperature_API">
+        <test-method status="PASS" signature="getRequest()[pri:0, instance:Tests.Temperature_API@2d6eabae]" name="getRequest" duration-ms="4466" started-at="2020-11-22T11:02:32 IST" finished-at="2020-11-22T11:02:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequest -->
+      </class> <!-- Tests.Temperature_API -->
+    </test> <!-- Fetch values from GUI and API -->
+    <test name="Compare the values" duration-ms="4" started-at="2020-11-22T11:02:36 IST" finished-at="2020-11-22T11:02:36 IST">
       <class name="Tests.Temperature_Compare">
-        <test-method status="PASS" signature="compare_Values()[pri:0, instance:Tests.Temperature_Compare@131276c2]" name="compare_Values" duration-ms="15" started-at="2020-11-22T10:43:52 IST" finished-at="2020-11-22T10:43:52 IST">
+        <test-method status="PASS" signature="compare_Values()[pri:0, instance:Tests.Temperature_Compare@57e1b0c]" name="compare_Values" duration-ms="1" started-at="2020-11-22T11:02:36 IST" finished-at="2020-11-22T11:02:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compare_Values -->
       </class> <!-- Tests.Temperature_Compare -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Compare the values -->
+  </suite> <!-- Temerature Comparator -->
 </testng-results>
