@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3452" started-at="2020-11-22T10:17:42 IST" finished-at="2020-11-22T10:17:45 IST">
+  <suite name="Default suite" duration-ms="63" started-at="2020-11-22T10:43:52 IST" finished-at="2020-11-22T10:43:52 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3452" started-at="2020-11-22T10:17:42 IST" finished-at="2020-11-22T10:17:45 IST">
-      <class name="Tests.Temperature_API">
-        <test-method status="PASS" signature="getRequest()[pri:0, instance:Tests.Temperature_API@131276c2]" name="getRequest" duration-ms="3410" started-at="2020-11-22T10:17:42 IST" finished-at="2020-11-22T10:17:45 IST">
+    <test name="Default test" duration-ms="63" started-at="2020-11-22T10:43:52 IST" finished-at="2020-11-22T10:43:52 IST">
+      <class name="Tests.Temperature_Compare">
+        <test-method status="PASS" signature="compare_Values()[pri:0, instance:Tests.Temperature_Compare@131276c2]" name="compare_Values" duration-ms="15" started-at="2020-11-22T10:43:52 IST" finished-at="2020-11-22T10:43:52 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getRequest -->
-      </class> <!-- Tests.Temperature_API -->
+        </test-method> <!-- compare_Values -->
+      </class> <!-- Tests.Temperature_Compare -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

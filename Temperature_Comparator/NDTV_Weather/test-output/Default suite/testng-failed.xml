@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.Temperature_GUI">
+      <class name="Tests.Temperature_Compare">
         <methods>
-          <include name="Fetch_GUI_Temp"/>
+          <include name="compare_Values"/>
         </methods>
-      </class> <!-- Tests.Temperature_GUI -->
+      </class> <!-- Tests.Temperature_Compare -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
