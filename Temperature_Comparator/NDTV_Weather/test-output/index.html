@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Temerature_Comparator">
-              <span class="suite-name border-passed">Temerature Comparator</span>
+              <span class="suite-name border-failed">Temerature Comparator</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Temerature_Comparator" class="hide-methods failed suite-Temerature_Comparator"> (hide)</a> <!-- hide-methods failed suite-Temerature_Comparator -->
+                      <a href="#" panel-name="suite-Temerature_Comparator" class="show-methods failed suite-Temerature_Comparator"> (show)</a> <!-- show-methods failed suite-Temerature_Comparator -->
+                    </span>
+                    <div class="method-list-content failed suite-Temerature_Comparator">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Temerature_Comparator" title="Tests.Temperature_Compare" hash-for-method="compare_Values">compare_Values</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Temerature_Comparator -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,11 +117,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Temerature_Comparator" title="Tests.Temperature_GUI" hash-for-method="Fetch_GUI_Temp">Fetch_GUI_Temp</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Temerature_Comparator" title="Tests.Temperature_Compare" hash-for-method="compare_Values">compare_Values</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -127,6 +136,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Temerature_Comparator" class="panel Temerature_Comparator">
+          <div class="suite-Temerature_Comparator-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.Temperature_Compare</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="compare_Values">
+                  </a> <!-- compare_Values -->
+                  <span class="method-name">compare_Values</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
+	at Tests.Temperature_Compare.compare_Values(Temperature_Compare.java:27)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Temerature_Comparator-class-failed -->
           <div class="suite-Temerature_Comparator-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -138,21 +169,6 @@
                   <a name="Fetch_GUI_Temp">
                   </a> <!-- Fetch_GUI_Temp -->
                   <span class="method-name">Fetch_GUI_Temp</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Temerature_Comparator-class-passed -->
-          <div class="suite-Temerature_Comparator-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Tests.Temperature_Compare</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="compare_Values">
-                  </a> <!-- compare_Values -->
-                  <span class="method-name">compare_Values</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -235,22 +251,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Fetch_GUI_Temp')
-data.setCell(0, 2, 'Tests.Temperature_GUI')
-data.setCell(0, 3, 34937);
+data.setCell(0, 1, 'getRequest')
+data.setCell(0, 2, 'Tests.Temperature_API')
+data.setCell(0, 3, 3982);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getRequest')
-data.setCell(1, 2, 'Tests.Temperature_API')
-data.setCell(1, 3, 4410);
+data.setCell(1, 1, 'Fetch_GUI_Temp')
+data.setCell(1, 2, 'Tests.Temperature_GUI')
+data.setCell(1, 3, 3264);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'compare_Values')
 data.setCell(2, 2, 'Tests.Temperature_Compare')
-data.setCell(2, 3, 1);
+data.setCell(2, 3, 2);
 window.suiteTableData['Temerature_Comparator']= { tableData: data, tableDiv: 'times-div-Temerature_Comparator'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Temerature_Comparator">
               </div> <!-- times-div-Temerature_Comparator -->
             </div> <!-- times-div -->
@@ -277,23 +293,36 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.Temperature_GUI</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Fetch_GUI_Temp</span>
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.Temperature_API</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getRequest</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Temperature_GUI</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Fetch_GUI_Temp</span>
+                <span class="method-start">30309 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">33576 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.Temperature_Compare</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">compare_Values</span>
-                <span class="method-start">34966 ms</span>
+                <span class="method-start">34360 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

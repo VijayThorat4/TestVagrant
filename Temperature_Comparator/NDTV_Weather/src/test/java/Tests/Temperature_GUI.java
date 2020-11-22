@@ -4,22 +4,30 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.NDTV.Pages.HomePage;
 import com.NDTV.Pages.WeatherClass;
 
-public class Temperature_GUI {
+public class Temperature_GUI extends Base{
 	static String temp_GUI;
+	
+	@BeforeMethod
+	public void setup() {
+		initialization();
+	}
+
+	@AfterMethod
+	public void teardown() {
+		driver.quit();
+	}
+
 	
 	@Test
 	public void Fetch_GUI_Temp() {
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver2.exe");
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.ndtv.com/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
+	
 		// Actions on Home Page
 		HomePage home = new HomePage(driver);
 		
@@ -41,7 +49,7 @@ public class Temperature_GUI {
 		weather.selectCityFromList();
 		weather.clickCityOnMap();
 		temp_GUI = weather.fetchTempValue();
-		System.out.println("Temperature from NDTV Weature is " + temp_GUI + "Celsius");
+		System.out.println("Temperature from NDTV Weature is " + temp_GUI + " Celsius");
 		
 	}
 
